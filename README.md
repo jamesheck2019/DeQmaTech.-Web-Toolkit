@@ -26,7 +26,7 @@
 ```
 ```vb.net
     Sub SetClientWithOptions()
-        Dim Optians As New ProxySDK.ConnectionSettings With {.CloseConnection = True, .TimeOut = TimeSpan.FromMinutes(30), .Proxy = New ProxySDK.ProxyConfig With {.ProxyIP = "172.0.0.0", .ProxyPort = 80, .ProxyUsername = "myname", .ProxyPassword = "myPass", .SetProxy = True}}
+         Dim Optians As New ProxySDK.ProxyConfig With {.ProxyIP = "172.0.0.0", .ProxyPort = 80, .ProxyUsername = "myname", .ProxyPassword = "myPass", .SetProxy = True}
         Dim MyClient As ProxySDK.IProxy = New ProxySDK.ProxyClient(Optians)
     End Sub
 ```
